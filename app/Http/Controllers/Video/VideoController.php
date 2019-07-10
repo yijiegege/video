@@ -18,4 +18,11 @@ class VideoController extends Controller
         $response=$Client->uploadFile($this->bucket_name,$file_name1,$file_name2);
         var_dump($response);
     }
+    public function Videoindex1(){
+        $Client= new OssClient($this->AccessKeyID,$this->AccessKeySecret,env('USERNAME'));
+        $file_name1=rand(1,10).mt_rand(1,9999999).'.txt';
+        $file_name2='robots.txt';
+        $response=$Client->putObject($this->bucket_name,$file_name1,$file_name2);
+        var_dump($response);
+    }
 }
