@@ -29,6 +29,7 @@ class VideoController extends Controller
     public function index(Request $request){
         $video_id=$request->input('video_id');
         $response=VideoModel::where(['video_id'=>$video_id])->get()->toArray();
+//        var_dump($response);die;
         return view('video/index',compact('response'));
     }
 }

@@ -8,10 +8,7 @@
     <title>视频播放</title>
 </head>
 <body>
-
-    @foreach($response as $k=>$v)
-    <video src="/storage/{{$v['video_path']}}" controls="controls" style="width: 600px;height: 600px"></video>
-    @endforeach
-
+    <div style="background-color: #0d6aad;width: 125px;height: 20px"><h5>视频名称：{{$response[0]['video_name']}}</h5></div>
+    <video src="/storage/{{$response[0]['video_path']}}" controls="controls" style="width: 500px;height: 500px"></video>
 </body>
 </html>
