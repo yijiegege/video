@@ -24,7 +24,7 @@ class CronController extends Controller
             if($v=='.' || $v=='..'){
                 continue;
             }
-            $file_name='files'.$v;
+            $file_name='files/'.$v;
             $local_file=$file_path.'/'.$v;
         //echo '本地文件：'.$local_file;echo '</br>';die;
             //上传
