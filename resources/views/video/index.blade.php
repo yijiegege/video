@@ -8,7 +8,7 @@
     <title>视频播放</title>
 </head>
 <body>
-    <div style="background-color: #0d6aad;width: 125px;height: 20px"><h5>视频名称：{{$response[0]['video_name']}}</h5></div>
+    <div style="background-color: #0d6aad;width:200px;height: 20px"><h5>视频名称：{{$response[0]['video_name']}}</h5></div>
     <video src="{{env('CDN_HOST')}}/{{$response[0]['video_path']}}" controls="controls" style="width: 500px;height: 500px"></video>
 </body>
 </html>
