@@ -19,3 +19,9 @@ Route::get('Video/Videoindex','Video\VideoController@Videoindex');
 Route::get('Video/Videoindex1','Video\VideoController@Videoindex1');
 Route::get('Video/CronSaveToOss','Cron\CronController@CronSaveToOss');
 Route::get('Video/index','Video\VideoController@index');
+Route::get('Video/Player','Video\PlayerController@Player');
+Route::get('Video/LiveShow','Video\LiveShowController@LiveShow');
+
+
+//阿里云消息服务
+Route::get('Aliyun/CallBack','Aliyun\AliyunShowController@CallBack');
