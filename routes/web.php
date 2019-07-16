@@ -24,4 +24,4 @@ Route::get('Video/LiveShow','Video\LiveShowController@LiveShow');
 
 
 //阿里云消息服务
-Route::get('Aliyun/CallBack','Aliyun\AliyunController@CallBack');
+Route::post('Aliyun/CallBack','Aliyun\AliyunController@CallBack');
